@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>コネポケ リサイクルでつながるアプリ｜送信完了</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="description" content="リサイクルでつながるアプリconepokeのお問い合わせページ">
+<meta name="keywords" content="conepoke,コネポケ,不用品,リサイクル,アプリ">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+$('a[href^="#"]').click(function() {
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="conepoke"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="index.html#new">News</a></li>
+<li><a href="index.html#company">Company</a></li>
+<li><a href="index.html#service">Service</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="contact">
+
+<h2>送信完了</h2>
+
+<!-- フォームの情報はここからです -->
+
+<style>.ta1 {table-layout:auto;}</style>
+
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="finish" />
+<!-- 処理終了 -->
+<p>お問い合わせを受け付けました。<br>
+お問い合わせの回答まで、今しばらくお待ちくださいませ。</p>
+</form>
+<!-- フォームの情報はここまでです -->
+
+</section>
+<!--/#contact-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">eliya</a> All Rights Reserved.</small>
+<!--<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>-->
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+</body>
+</html>
