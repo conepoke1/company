@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>コネポケ リサイクルでつながるアプリ｜確認画面</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="description" content="リサイクルでつながるアプリconepokeのお問い合わせページ">
+<meta name="keywords" content="conepoke,コネポケ,不用品,リサイクル,アプリ">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+$('a[href^="#"]').click(function() {
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="conepoke"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="index.html#new">News</a></li>
+<li><a href="index.html#company">Company</a></li>
+<li><a href="index.html#service">Service</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p class="c">入力内容をご確認の上、よろしければ「送信」ボタンを押してください。<br>
+入力をやり直す場合は、[戻る]ボタンを押して入力画面に戻り、再度入力してください。
+</p>
+
+<!-- フォームの情報はここからです -->
+
+<style>.ta1 {table-layout:auto;}</style>
+
+<form name="form1" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="confirm" />
+<table class="ta1 mb1em">
+<tr><td colspan="2" class="auto"><strong>お問い合わせフォーム（確認画面）</strong></td></tr>
+<!-- 入力／確認 -->
+<tr><th class="tamidashi" colspan="2">入力内容の確認</th></tr>
+<tr>
+<th width="150">お名前<span style="color:red">※</span></th>
+<td>
+<input type="hidden" name="item1" value="<?php echo $form["item1"];?>">
+<?php echo $form["item1"];?></td>
+</tr>
+<tr>
+<th width="150">メールアドレス<span style="color:red">※</span></th>
+<td>
+<input type="hidden" name="item2" value="<?php echo $form["item2"];?>">
+<?php echo $form["item2"];?></td>
+</tr>
+<tr>
+<th>お問い合わせ内容 <span style="color:red">※</span></th>
+<td>
+<input type="hidden" name="item3" value="<?php echo $form["item3"]; ?>">
+<?php echo nl2br($form["item3"]);?></td>
+</tr>
+
+</table>
+<div class="c">
+<input type="submit" value="送信する" class="btn" />
+&nbsp;&nbsp;
+<input type="button" value="戻る" onClick="document.form1.mode.value='reinput';document.form1.submit()" class="btn" />
+</div>
+</form>
+<!-- フォームの情報はここまでです -->
+
+</section>
+<!--/#contact-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">eliya</a> All Rights Reserved.</small>
+<!--<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>-->
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+</body>
+</html>
