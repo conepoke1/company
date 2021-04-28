@@ -177,12 +177,12 @@ list:first-of-type {
 }
 /*画像の設定*/
 .list img {
-	width: 40%;			/*画像幅(default20%)*/
+	width: 25%;			/*画像幅(default20%)*/
 	float: center;		/*画像を左に回り込み(default left=旧center)*/
 	margin-bottom: 1%;	/*画像の右側に空けるスペース(default3%=旧1%)*/
 }
 .list1 img {
-	width: 40%;			/*画像幅(default20%)*/
+	width: 25%;			/*画像幅(default20%)*/
 	float: center;		/*画像を左に回り込み(default left=旧center)*/
 	margin-bottom: 1%;	/*画像の右側に空けるスペース(default3%=旧1%)*/
 }
@@ -339,6 +339,20 @@ header #logo img {
 	left: 35%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
 }
 
+/*Serviceページ
+---------------------------------------------------------------------------*/
+/*画像の設定*/
+.list img {
+	width: 40%;			/*画像幅(default20%)*/
+	float: center;		/*画像を左に回り込み(default left=旧center)*/
+	margin-bottom: 1%;	/*画像の右側に空けるスペース(default3%=旧1%)*/
+}
+.list1 img {
+	width: 40%;			/*画像幅(default20%)*/
+	float: center;		/*画像を左に回り込み(default left=旧center)*/
+	margin-bottom: 1%;	/*画像の右側に空けるスペース(default3%=旧1%)*/
+}
+
 }
 
 
@@ -378,6 +392,19 @@ header #logo img {
 /*h4見出しの設定*/
 .list h4 {
 	font-size: 16px;	/*文字サイズ*/
+}
+/*Serviceページ
+---------------------------------------------------------------------------*/
+/*画像の設定*/
+.list img {
+	width: 50%;			/*画像幅(default20%)*/
+	float: center;		/*画像を左に回り込み(default left=旧center)*/
+	margin-bottom: 1%;	/*画像の右側に空けるスペース(default3%=旧1%)*/
+}
+.list1 img {
+	width: 50%;			/*画像幅(default20%)*/
+	float: center;		/*画像を左に回り込み(default left=旧center)*/
+	margin-bottom: 1%;	/*画像の右側に空けるスペース(default3%=旧1%)*/
 }
 
 /*ul.disc,olタグ
