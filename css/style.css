@@ -118,7 +118,7 @@ header #logo img {
 	font-size: 20px;		/*文字サイズ*/
 	text-align: center;		/*文字をセンタリング*/
 	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする指定*/
-	background: #374c55;	/*背景色*/
+	background: #5d97bc;	/*背景色*/
 	color: #fff;			/*文字色*/
 	border-radius: 100px;	/*角を丸くする指定。大きめであれば適当で構いません。*/
 }
